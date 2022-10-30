@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bio Online">
+    <meta name="description" content="Acompanhe seus links orgãnicos pela web.">
+    <meta name="keywords" content="sites, web, internet, link, url, analytics, marketing">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Gerador de UTM | Bio Online</title>
+</head>
+<body>
+    <header>
+        <a id="copyright" href="https://bioonline.xyz" target="_blank"><img src="/img/favicon.png" alt="Logo Bio Online" title="Ir para bioonline.xyz"></a>
+        <h1 class="title-site">Gerador de UTM</h1>
+    </header>
+
+    <main>
+        <aside>
+            <p id="banner-left"></p>
+        </aside>
+        <section id="utm-generation">
+            <form action="" class="utm-form">
+
+                <div class="value-utm">
+                    <label for="url-utm">URL<sup>*</sup><span class="material-symbols-outlined" title="Em breve, ajuda.">info</span></label >
+                    <input  type="url" id="url-utm" class="form-utm-value" requeried autofocus placeholder="Exemplo: bioonline.xyz">
+                </div>
+          
+                <div class="value-utm">
+                    <label for="source-utm">Origem<sup>*</sup></label>
+                    <input type="text" id="source-utm" class="form-utm-value" requeried placeholder="Exemplo: google">
+                </div>
+           
+                <div class="value-utm">
+                    <label for="medium-utm">Mídia<sup>*</sup></label>
+                    <input type="text" id="medium-utm" class="form-utm-value" requeried placeholder="Exemplo: organico"> 
+                </div>
+          
+                <div class="value-utm">
+                    <label for="campaign-utm">Campanha<sup>*</sup></label>
+                    <input type="text" id="campaign-utm" class="form-utm-value" requeried placeholder="Exemplo: black_friday" >
+                </div>
+       
+                <div class="value-utm">
+                    <label for="term-utm">Palavra-chave</label>
+                    <input type="text" id="term-utm" class="form-utm-value" placeholder="Exemplo: camisa">
+                </div>
+       
+                <div class="value-utm">
+                    <label for="content-utm">Conteúdo</label>
+                    <input type="text" id="content-utm" class="form-utm-value" placeholder="Exemplo: azul">
+                </div>
+            </form>
+
+            <div class="value-utm-create">
+                <button class="btn" id="create-utm" onclick="createUtm()">Criar UTM</button>
+            </div>
+            <div class="value-utm-result">
+                <textarea class="form-utm-result" wrap="hard" readonly id="result-utm"></textarea>
+            </div>
+
+            <div class="value-utm-btn">
+                <div class="value-utm-clear">
+                    <button class="btn" id="clear-fields" onclick="clearFields()">Limpar Campos</button>
+                </div>
+                <div class="value-utm-result">
+                    <button class="btn" id="copy-utm" onclick="copyUtm()">Copiar URL</button>
+                </div>
+            </div>
+            
+
+
+        </section>
+        <aside>
+            <p id="banner-right"></p>
+        </aside>
+    </main>
+    <footer>
+        
+        <a id="copyright" href="https://bioonline.xyz" target="_blank">&copy; Bio Online</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
